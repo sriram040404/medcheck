@@ -106,6 +106,13 @@ header h1 {
 }
 
 /* footer css */
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
 .head {
   padding: 0 16px;
   font-family: "Montserrat";
