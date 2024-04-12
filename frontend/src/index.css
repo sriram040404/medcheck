@@ -55,7 +55,7 @@ body {
 }
 
 .homepage-text h1{
-  font-size: 7rem;
+  font-size: 6rem;
   font-family: "McLaren", cursive;
   font-weight: bold;
   color: #f5ba13;
@@ -92,11 +92,53 @@ body {
   margin-left: 15%;
 }
 
+.create-reminder,.view-reminder{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5vh;
+}
+
+.create-reminder h1, .view-reminder h1{
+  margin-bottom: 5vh;
+  font-size: 3.5rem;
+  color: #f5ba13;
+  font-family: cursive;
+}
+
+.create-reminder-form{
+  border: 2px solid black;
+  width: fit-content;
+  background-color: white;
+  padding: 2%;
+  border-radius: 10px;
+}
+
+button{
+  padding: 2%;
+  border-radius: 5px;
+  background-color: #ffcc00;
+}
+button:hover{
+  background-color: #fce172;
+}
+
+.create-reminder-table tr td{
+  padding: 15px;
+}
+
 header {
   background-color: #f5ba13;
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.create-reminder-form-inputs{
+  width: 50px;
+  text-align: center;
 }
 
 header h1 {

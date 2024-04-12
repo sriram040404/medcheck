@@ -2,7 +2,11 @@ import React from 'react'
 
 const ViewReminders = () => {
   return (
-    <div>ViewReminders</div>
+    <div>
+      <div className='view-reminder'>
+      <h1>All Reminders</h1>
+      </div>
+    </div>
   )
 }
 
