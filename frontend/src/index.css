@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #eee;
+  background-color: #ffffff;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */}
+
+.navbar{
+  padding: 2%;
+  background-color: #f5ba13;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  text-decoration: none; 
+}
+
+.navbar-logo{
+  width: 50vw;
+}
+
+.navbar-items{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 32px;
+  list-style-type: none;
+  width: 50vw;
+  font-family: "McLaren", cursive;
+  text-decoration: none;  
+}
+
+.navbar-items a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.homepage{
+  padding: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.homepage-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-text h1{
+  font-size: 7rem;
+  font-family: "McLaren", cursive;
+  font-weight: bold;
+  color: #f5ba13;
+  margin: 0;
+}
+
+.homepage-text p{
+  text-align: center;
+  font-size: 1.5rem;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 2.5%;
+}
+
+.homepage-info{
+  margin-left: 10%;
+  margin-top: 5%;
+  font-size: 1.3rem;
+  border: 5px black solid;
+  width: 30vw;
+  border-radius: 2%;
+}
+
+.homepage-info p{
+  font-size: 1.3rem;
+  font-family: "McLaren", cursive;
+  color: #f5ba13;
+  text-align: center;
+  margin: 2%;
+}
+
+.homepage-info li{
+  font-size: 1.3rem;
+  font-family: "McLaren", cursive;
+  margin-left: 15%;
+}
+
+
+
+
+
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
