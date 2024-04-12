@@ -4,6 +4,7 @@ import HomePage from './components/HomePage'
 import CreateReminder from './components/CreateReminder'
 import ViewReminders  from './components/ViewReminders'
 import About from './components/About'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/view" element={<ViewReminders />} />
       <Route path="/about" element={<About />} />
     </Routes>
+    <Footer />
     </>
   )
 }
