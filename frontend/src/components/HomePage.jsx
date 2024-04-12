@@ -4,7 +4,7 @@ const HomePage = () => {
   return (
     <div className='homepage'>
       <div className='homepage-text'>
-      <h1>Bye BYE to MedCheck </h1>
+      <h1>Wlecome to MedCheck </h1>
       <p>MedCheck is a simple app to help you keep track of your medications and appointments.</p>
       </div> 
       <div className='homepage-info'>
