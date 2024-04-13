@@ -3,7 +3,7 @@ import React from 'react'
 const Medicine = () => {
   return (
     <div className='medicine-info'>
-      <h1>Create a Reminder</h1>
+      <h1>Medicine Info</h1>
         <ul class="med-cont">
             <li><b>HYDROCODON:</b> Used for Severe pain and as a cough suppresant for adults[Every 12hrs].</li><br />
             <li><b>METFORMIN:</b> Used for type 2 diabetes and to treat PCOS[max 2000mg per day].</li><br />
