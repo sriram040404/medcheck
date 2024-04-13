@@ -17,7 +17,7 @@ def create_reminder():
     if(not medicine_name or not description or not time):
         return jsonify({'error': 'Please provide all fields'}), 400
 
-    new_reminder = Reminders(medicine_name, description, time)
+    new_reminder = Reminders(medicine_name=medicine_name, description=description, time=time)
 
     try:
         db.session.add(new_reminder)
@@ -26,9 +26,6 @@ def create_reminder():
         return ({"message":str(e)},400)
     
     return jsonify({"message":"Reminder Created Successfully"}),201
-
-
-
 
 
 if __name__ == "__main__":
