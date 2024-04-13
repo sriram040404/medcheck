@@ -9,12 +9,12 @@ const CreateReminder = () => {
       <form className='create-reminder-form'>
         <table className='create-reminder-table'>
           <tr>
-            <td>Name</td>
-            <td className='create-reminder-form-inputs'><input type="text" name="name" /></td>
+            <td>Medicine Name</td>
+            <td className='create-reminder-form-inputs'><input type="text" name="medicine name" /></td>
           </tr>
           <tr>
-            <td>Medicines</td>
-            <td className='create-reminder-form-inputs'><textarea type="text" name="medicines" /></td>
+            <td>Description</td>
+            <td className='create-reminder-form-inputs'><textarea type="text" name="description" /></td>
           </tr>
           <tr>
             <td>Time</td>
