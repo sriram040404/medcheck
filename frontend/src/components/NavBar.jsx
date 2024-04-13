@@ -6,7 +6,7 @@ const NavBar = () => {
     <div className='navbar'>
         <div className='navbar-logo'>
           <img src=".\src\assets\favicon-32x32.png" alt="Logo"/>
-          <h3>MedCheck</h3>
+          <h4>MedCheck</h4>
         </div>
         <ul className='navbar-items'>
             <Link to="/"><li>Home</li></Link>
