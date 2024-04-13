@@ -1,4 +1,5 @@
 import React,{useEffect, useState} from 'react'
+import Timer from './Timer';
 
 const ViewReminders = () => {
   const [reminders, setReminders] = useState([])
@@ -18,6 +19,7 @@ const ViewReminders = () => {
       <h3 className='reminder-text'>Tablet: {reminder.medicineName}</h3>
       <p className='reminder-text'>Descritpion: {reminder.description}</p>
       <p className='reminder-text'>Time: {reminder.time}</p>
+      <Timer time={reminder.time}/>
     </div>
   }
 
