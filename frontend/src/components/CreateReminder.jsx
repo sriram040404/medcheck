@@ -1,6 +1,8 @@
 import React from 'react'
 
 const CreateReminder = () => {
+  cons
+
   return (
     <div className='create-reminder'>
       <h1>Create a Reminder</h1>
