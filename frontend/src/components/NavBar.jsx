@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom'
 const NavBar = () => {
   return (
     <div className='navbar'>
-        <h3 className='navbar-logo'>MedCheck</h3>
+        <div className='navbar-logo'>
+          <img src=".\src\assets\favicon-32x32.png" alt="Logo"/>
+          <h3>MedCheck</h3>
+        </div>
         <ul className='navbar-items'>
             <Link to="/"><li>Home</li></Link>
             <Link to="/create"><li>Create Reminder</li></Link>

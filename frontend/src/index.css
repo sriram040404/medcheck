@@ -24,9 +24,15 @@ body {
 }
 
 .navbar-logo{
+  display: flex;
+  align-items: center;
   width: 50vw;
   font-size: 200%;
   font-family: 'cambria';
+}
+
+.navbar-logo img{
+  margin-right: 10px;
 }
 
 .navbar-items{
