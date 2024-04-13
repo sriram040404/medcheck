@@ -190,5 +190,12 @@ footer{
   padding: 5%;
   border-radius: 10px;
   margin-right: 5%;
+  width: 20vw;
   background-color: #fce172;
+}
+
+.reminder-text
+{
+  font-size: 1rem;
+  font-family: "McLaren", cursive;
 }

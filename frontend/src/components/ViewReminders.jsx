@@ -15,9 +15,9 @@ const ViewReminders = () => {
   }
   function returnReminders(reminder){
     return <div className='reminder' key={reminder.id}>
-      <h3>Tablet: {reminder.medicineName}</h3>
-      <p>Descritpion: {reminder.description}</p>
-      <p>Time: {reminder.time}</p>
+      <h3 className='reminder-text'>Tablet: {reminder.medicineName}</h3>
+      <p className='reminder-text'>Descritpion: {reminder.description}</p>
+      <p className='reminder-text'>Time: {reminder.time}</p>
     </div>
   }
 
