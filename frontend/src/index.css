@@ -94,7 +94,7 @@ body {
   margin-left: 15%;
 }
 
-.create-reminder,.view-reminder{
+.create-reminder,.view-reminder,.medicine-info{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,7 +103,7 @@ body {
   margin-top: 5vh;
 }
 
-.create-reminder h1, .view-reminder h1{
+.create-reminder h1, .view-reminder h1,.medicine-info h1{
   margin-bottom: 5vh;
   font-size: 3.5rem;
   color: #f5ba13;
@@ -145,7 +145,6 @@ header {
 
 
 /* footer css */
-
 footer{
   background-color: #f5ba13;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -171,24 +170,16 @@ footer{
   font-family: "McLaren", cursive;
 }
 
-
 footer{
     margin-top: auto;
     text-align: center;
 }
 
-.med-head{
-  margin-bottom: 5vh;
-font-size: 3.5rem;
-color: #f5ba13;
-font-family: cursive;
-text-align: center;
-}
 .med-cont{
-  margin-left: 10%;
-margin-top: 5%;
-font-size: 1.3rem;
-border: 5px black solid;
-width: 70vw;
-border-radius: 2%;
+  margin: 1%;
+  padding: 5%;
+  width: fit-content;
+  font-size: 1.2rem;
+  border: 5px black solid;
+  border-radius: 2%;
 }
