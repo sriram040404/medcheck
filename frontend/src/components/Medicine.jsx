@@ -11,8 +11,6 @@ const Medicine = () => {
             <li><b>ANTIBIOTICS:</b> Used to cure bacterial infection[depending on the doctor's prescription].</li><br />
             <li><b>ANTIHISTAMINES:</b> Used to treat symptoms of most Allergies[take every day with a fixed schedule].</li><br />
             <li><b>OMEPRAZOLE:</b> Used to reduce acid in Stomach and treat indigestion heartburn[once a day before eating].</li><br />
-            <li><b>LEVOTHYROXIN:</b> Used for underactive thyroid gland[take 30mins before breakfast].</li><br />
-            <li><b>ATORVASTATIN:</b> Used for treating high cholesterol prevent heart disease[take once a day].</li>
         </ul>
     </div>
   )

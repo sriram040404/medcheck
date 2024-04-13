@@ -14,10 +14,10 @@ const ViewReminders = () => {
     setReminders(data)
   }
   function returnReminders(reminder){
-    return <div key={reminder.id}>
-      <h3>{reminder.medicineName}</h3>
-      <p>{reminder.description}</p>
-      <p>{reminder.time}</p>
+    return <div className='reminder' key={reminder.id}>
+      <h3 className='reminder-text'>Tablet: {reminder.medicineName}</h3>
+      <p className='reminder-text'>Descritpion: {reminder.description}</p>
+      <p className='reminder-text'>Time: {reminder.time}</p>
     </div>
   }
 
@@ -25,7 +25,7 @@ const ViewReminders = () => {
     <div>
       <div className='view-reminder'>
       <h1>All Reminders</h1>
-      <h2>{reminders.map(returnReminders)}</h2>
+      <div className='reminder-div'>{reminders.map(returnReminders)}</div>
       </div>
     </div>
   )

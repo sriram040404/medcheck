@@ -50,7 +50,7 @@ const CreateReminder = () => {
           </tr>
           <tr>
             <td>Time</td>
-            <td className='create-reminder-form-inputs'><input type="text" name="time" value={time} onChange={(e)=>{setTime(e.target.value)}}  /></td>
+            <td className='create-reminder-form-inputs'><input type="time" name="time" value={time} onChange={(e)=>{setTime(e.target.value)}}  /></td>
           </tr>
           <tr>
             <td colSpan={2} style={{textAlign:'center'}}><button type='submit'>Create Reminder</button></td>

@@ -177,3 +177,25 @@ footer{
   border: 5px black solid;
   border-radius: 20px;
 }
+
+/* each reminder styling */
+.reminder-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reminder{
+  border: 2px solid #f5ba13;
+  padding: 5%;
+  border-radius: 10px;
+  margin-right: 5%;
+  width: 20vw;
+  background-color: #fce172;
+}
+
+.reminder-text
+{
+  font-size: 1rem;
+  font-family: "McLaren", cursive;
+}
