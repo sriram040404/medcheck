@@ -199,3 +199,27 @@ footer{
   font-size: 1rem;
   font-family: "McLaren", cursive;
 }
+
+.timer-part{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffcc00;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.timer-part p{
+  padding: 2%;
+}
+
+.timer{
+  background-color: whitesmoke;
+}
+
+.actual-timer{
+  width:fit-content;
+  font-size: x-large;
+}

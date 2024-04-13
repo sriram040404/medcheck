@@ -7,11 +7,15 @@ const Timer = (props) => {
 
     function getTime(deadline){
         var currentdate = new Date();
-        const hours=currentdate.getHours()-deadline[0]
-        const minutes=currentdate.getMinutes()-deadline[1]
-        const seconds=currentdate.getSeconds()
+        
+        var hours=currentdate.getHours()-deadline[0]
+        var minutes=currentdate.getMinutes()-deadline[1]
+        var seconds=currentdate.getSeconds()
+        if(currentdate.getHours()>deadline[0]){
+            hours=24-(currentdate.getHours()-deadline[0])
+        }
 
-        setHours(Math.floor((hours)));
+        setHours(Math.floor(Math.abs(hours)));
         setMinutes(Math.floor(Math.abs(minutes)))
         setSeconds(60-seconds)
     }
@@ -25,9 +29,9 @@ const Timer = (props) => {
       }, []);
 
     return (
-        <div>
+        <div className='timer-part'>
             <p>Remaining Time</p>
-            <span className='timer'>{hours}</span>:<span className='timer'>{minutes}</span>:<span className='timer'>{seconds}</span>
+            <p className='actual-timer'><span className='timer'>{hours}</span>:<span className='timer'>{minutes}</span>:<span className='timer'>{seconds}</span></p>
             
         </div>
     )
