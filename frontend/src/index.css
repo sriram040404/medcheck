@@ -25,6 +25,8 @@ body {
 
 .navbar-logo{
   width: 50vw;
+  font-size: 200%;
+  font-family: 'cambria';
 }
 
 .navbar-items{
@@ -173,4 +175,20 @@ footer{
 footer{
     margin-top: auto;
     text-align: center;
+}
+
+.med-head{
+  margin-bottom: 5vh;
+font-size: 3.5rem;
+color: #f5ba13;
+font-family: cursive;
+text-align: center;
+}
+.med-cont{
+  margin-left: 10%;
+margin-top: 5%;
+font-size: 1.3rem;
+border: 5px black solid;
+width: 70vw;
+border-radius: 2%;
 }
