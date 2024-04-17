@@ -25,7 +25,16 @@ const Timer = (props) => {
     setSeconds(remainingSeconds);
 
     if (remainingHours === 0 && remainingMinutes === 0 && remainingSeconds === 0) {
-      alert('Timer has reached 0!');
+      // Reset to 24 hours after reaching 0
+      const resetDate = new Date(currentDate);
+      resetDate.setHours(resetDate.getHours() + 24);
+      targetDate.setMinutes(0);
+      targetDate.setSeconds(0);
+      const resetTimeDiff = targetDate.getTime() - resetDate.getTime();
+
+      setHours(Math.floor(resetTimeDiff / (60 * 60 * 1000)));
+      setMinutes(Math.floor((resetTimeDiff % (60 * 60 * 1000)) / (60 * 1000)));
+      setSeconds(Math.floor((resetTimeDiff % (60 * 1000)) / 1000));
     }
   }
 
