@@ -23,6 +23,10 @@ const Timer = (props) => {
     setHours(remainingHours);
     setMinutes(remainingMinutes);
     setSeconds(remainingSeconds);
+
+    if (remainingHours === 0 && remainingMinutes === 0 && remainingSeconds === 0) {
+      alert('Timer has reached 0!');
+    }
   }
 
   useEffect(() => {
@@ -32,7 +36,6 @@ const Timer = (props) => {
     return () => clearInterval(interval);
   }, []);
 
-  // Format numbers to display leading zeros for single-digit values
   const formatTime = (value) => (value < 10 ? `0${value}` : value);
 
   return (
