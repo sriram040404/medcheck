@@ -13,8 +13,14 @@ const Timer = (props) => {
     targetDate.setSeconds(0);
 
     let timeDiff = targetDate.getTime() - currentDate.getTime();
+
+    if(hours==currentDate.getHours() && minutes==currentDate.getMinutes() && seconds==currentDate.getSeconds()){
+      alert("Passed")
+    }
+
     if (timeDiff < 0) {
       // Reset to 24 hours after reaching 0
+      
       targetDate.setDate(targetDate.getDate() + 1);
       timeDiff = targetDate.getTime() - currentDate.getTime();
     }
