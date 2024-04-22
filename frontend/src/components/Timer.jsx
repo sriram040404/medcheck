@@ -14,8 +14,8 @@ const Timer = (props) => {
 
     let timeDiff = targetDate.getTime() - currentDate.getTime();
 
-    if(hours==currentDate.getHours() && minutes==currentDate.getMinutes() && seconds==currentDate.getSeconds()){
-      alert("Passed")
+    if(timeDiff==0){
+      alert("REMINDER TO TAKE YOUR MEDICINES")
     }
 
     if (timeDiff < 0) {
