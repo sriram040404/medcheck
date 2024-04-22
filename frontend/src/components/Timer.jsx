@@ -10,10 +10,13 @@ const Timer = (props) => {
     const targetDate = new Date(currentDate);
     targetDate.setHours(deadline[0]);
     targetDate.setMinutes(deadline[1]);
+    targetDate.setSeconds(0);
 
     let timeDiff = targetDate.getTime() - currentDate.getTime();
     if (timeDiff < 0) {
-      timeDiff += 24 * 60 * 60 * 1000; // Add 24 hours if the deadline is passed
+      // Reset to 24 hours after reaching 0
+      targetDate.setDate(targetDate.getDate() + 1);
+      timeDiff = targetDate.getTime() - currentDate.getTime();
     }
 
     const remainingHours = Math.floor(timeDiff / (60 * 60 * 1000));
@@ -23,19 +26,6 @@ const Timer = (props) => {
     setHours(remainingHours);
     setMinutes(remainingMinutes);
     setSeconds(remainingSeconds);
-
-    if (remainingHours === 0 && remainingMinutes === 0 && remainingSeconds === 0) {
-      // Reset to 24 hours after reaching 0
-      const resetDate = new Date(currentDate);
-      resetDate.setHours(resetDate.getHours() + 24);
-      targetDate.setMinutes(0);
-      targetDate.setSeconds(0);
-      const resetTimeDiff = targetDate.getTime() - resetDate.getTime();
-
-      setHours(Math.floor(resetTimeDiff / (60 * 60 * 1000)));
-      setMinutes(Math.floor((resetTimeDiff % (60 * 60 * 1000)) / (60 * 1000)));
-      setSeconds(Math.floor((resetTimeDiff % (60 * 1000)) / 1000));
-    }
   }
 
   useEffect(() => {
